@@ -1,0 +1,38 @@
+def generate_readme(content):
+    with open("README.md", "w") as f:
+        f.write(content)
+
+
+def generate_license(content):
+    with open("LICENSE", "w") as f:
+        f.write(content)
+
+
+if __name__ == "__main__":
+    readme_content = """
+# Quantum Mechanics
+
+This repository contains code examples and explanations for quantum mechanics. The content in this repository is meant for public use, but any use outside of its intended purpose is prohibited.
+
+## Copyright
+
+All content in this repository is owned by the AI Research Patent Promotion Agency. 
+
+## License
+
+This repository is licensed under a custom license. See the `LICENSE` file for more information.
+"""
+    generate_readme(readme_content)
+
+    license_content = """
+Custom License
+
+Copyright (c) 2023 AI Research Patent Promotion Agency
+
+All rights reserved.
+
+This software and associated documentation files (the "Software") may be used for its intended purpose by the public. Any use of the Software outside of its intended purpose is strictly prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"""
+    generate_license(license_content)
